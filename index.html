@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+   
+</head>
+
+<body>
+
+      <!-- Start Page -->
+      <div class="start-section" id="start-section">
+        <h2>Enter your details to start the quiz</h2>
+        <form id="start-form">
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <button type="submit">Start Quiz</button>
+        </form>
+    </div>
+
+     <!-- Quiz Section -->
+     <div class="quiz-section" id="quiz-section" style="display: none;">
+        <div class="quiz" id="Quiz">
+            <div id="timer" class="timer">Time Left: 02:00</div>
+            <h1 id="question" class="question">
+                <i class="fas fa-question-circle"></i>
+            </h1>
+            <hr>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="a">
+                    <label for="a" id="option-1"><i class="fas fa-check-circle"></i></label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="b">
+                    <label for="b" id="option-2"><i class="fas fa-check-circle"></i></label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="c">
+                    <label for="c" id="option-3"><i class="fas fa-check-circle"></i></label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" class="answer" id="d">
+                    <label for="d" id="option-4"><i class="fas fa-check-circle"></i></label>
+                </li>
+            </ul>
+            <hr>
+            <div class="btn">
+                <button type="submit" id="submit"><i class="fas fa-paper-plane"></i> Submit Answer</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
